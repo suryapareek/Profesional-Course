@@ -38,11 +38,24 @@ body{
    height:100vh;
  }
  .footer {
-   display:flex;
-   align-items:flex-end;
-   justify-content: center;
-   height:calc(100vh - 145px);
- }
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 768px) {
+  .footer img {
+    height: 250px; /* Mobile screens ke liye fixed height */
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer img {
+    height: 550px; /* Tablets ke liye optimized height */
+  }
+}
 </style>
 
   <body>
@@ -81,6 +94,9 @@ body{
         </select><br/><br/>
         <button id="find-course-btn">Find Course</button>
       </div>
+    </div>
+    <div class="footer">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVVLqGASMUSkTAdxM10lNP1QXEqxpsX6U1hw&s">
     </div>
     <script>
     
